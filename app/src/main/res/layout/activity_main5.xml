@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".view.MainActivity5">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgF"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/foods" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/foodInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="TOPPING"
+                android:textColor="@color/purple_500"
+                android:padding="10dp"
+                android:textSize="24sp" />
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="11dp">
+
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF9800"
+                    android:checked="true"
+                    android:text="mushroom"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF9800"
+                    android:text="onion"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF9800"
+                    android:text="sausage"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/QUANTITY"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:text="ENTER QUANTITY"
+                android:textColor="@color/purple_500"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:ems="10"
+                android:hint="enter quantity you want"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ADDCART"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#FF9800"
+                android:text="ADD TO CART"
+                app:cornerRadius="18dp"
+                android:textAlignment="center"
+                android:textColor="#F4EFEF"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>

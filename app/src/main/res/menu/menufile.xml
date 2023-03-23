@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cart"
+        app:showAsAction="always"
+        android:orderInCategory="120"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/my_cart" />
+
+    <item
+        android:id="@+id/search"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+         />
+
+    <item
+        android:id="@+id/help"
+        android:title="Help?"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log out"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/Email"
+        android:orderInCategory="180"
+        android:title="Email us" />
+
+</menu>

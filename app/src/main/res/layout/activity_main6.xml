@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".view.MainActivity6">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgF"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/foods" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fdsName"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/fdsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sauces"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="SAUCES"
+                android:textColor="@color/purple_500"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF9800"
+                    android:checked="true"
+                    android:text="Classic"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF9800"
+                    android:text="Mayo"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF9800"
+                    android:text="Chilli"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/QUANTITY"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:text="ENTER QUANTITY"
+                android:textColor="@color/purple_500"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/editTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter quantity you want"
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ADDCART"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#FF9800"
+                android:text="ADD TO CART"
+                android:textAlignment="center"
+                android:textColor="#F4EFEF"
+                android:textSize="22sp"
+                app:cornerRadius="18dp"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
